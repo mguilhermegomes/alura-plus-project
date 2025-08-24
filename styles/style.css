@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* === font-weight === */
+    --general-font-weight: 400;
+    --title-font-weight: 700;
+
+    /* === font-size === */
+    --general-font-size: 1rem;
+    --title-font-size: 3rem;
+    --items-font-size: 2rem;
+    --infos-font-size: 0.875rem;
+
+    /* === colors === */
+    --default-color: #ffffff;
+    --default-color-button: #167BF7;
+    --default-color-infos: #C0C0C0;
+}
+
+body {
+    background-color: #000000;
+    color: var(--default-color);
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.conteudo__principal__secao_combo {
+    padding: 8% 0%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../assets/Background.png");
+    background-size: cover;
+}
+
+.secao_combo__principal {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    width: 50%;
+}
+
+.secao_combo__principal__titulo {
+    font-size: 1.75rem;
+    font-weight: var(--title-font-weight);
+    text-align: center;
+    width: 80%;
+}
+
+.secao_combo__principal__img {
+    width: 50%;
+}
+
+.secao_combo__principal__assinar-12x {
+    display: inline-block;
+    padding: 2.5% 5%;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--default-color-button);
+    color: var(--default-color);
+    transition: background-color 0.3s, color 0.3s;
+    width: 75%;
+}
+
+.secao_combo__principal__assinar-12x:hover {
+    background-color: #1671e1;
+    color: #eeeeee;
+}
+
+.secao_combo__principal__assinar-alura-plus {
+    border: 1.5px solid #ffffff;
+    border-radius: 8px;
+    padding: 2.5% 5%;
+    text-decoration: none;
+    text-align: center;
+    color: var(--default-color);
+    transition: background-color 0.3s;
+    width: 75%;
+}
+
+.secao_combo__principal__assinar-alura-plus:hover {
+    background-color: #181818;
+}
+
+.secao_combo__principal__info {
+    font-size: 0.75rem;
+    font-weight: var(--general-font-weight);
+    color: var(--default-color-infos);
+}
