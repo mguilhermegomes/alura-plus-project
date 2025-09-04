@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #00030C;
     color: var(--default-color);
     line-height: 1.5;
     font-family: "Inter", sans-serif;
@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -102,6 +103,7 @@ body {
     font-size: 0.75rem;
     font-weight: var(--general-font-weight);
     color: var(--default-color-infos);
+    text-align: center;
 }
 
 .secao_plataformas {
@@ -210,6 +212,7 @@ body {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     color: var(--default-color);
+    text-align: center;
 }
 
 .secao_dispositivos__principal {
@@ -230,4 +233,39 @@ body {
 
 .secao_dispositivos__principal__img {
     width: 100%;
+}
+
+.rodape {
+    padding: 8% 10% 3% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rodape__img {
+    width: 8%;
+}
+
+.rodape__links {
+    display: flex;
+    gap: 16px;
+}
+
+.rodape__links__link {
+    font-size: var(--general-font-size);
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.rodape__direitos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.direitos__descricao {
+    text-align: center;
+    font-size: var(--infos-font-size);
+    color: var(--default-color-infos);
 }
