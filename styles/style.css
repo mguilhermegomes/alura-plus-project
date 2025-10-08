@@ -19,7 +19,9 @@
 
     /* === colors === */
     --default-color: #ffffff;
+    --default-color-hover: #eeeeee;
     --default-color-button: #167BF7;
+    --default-color-button-hover: #176bd2;
     --default-color-infos: #C0C0C0;
 }
 
@@ -80,8 +82,8 @@ body {
 }
 
 .secao_combo__principal__assinar-12x:hover {
-    background-color: #1671e1;
-    color: #eeeeee;
+    background-color: var(--default-color-button-hover);
+    color: var(--default-color-hover);
 }
 
 .secao_combo__principal__assinar-alura-plus {
@@ -165,6 +167,12 @@ body {
     font-weight: var(--general-font-weight);
     color: var(--default-color);
     width: 30%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.secao_telas__principal__assinar:hover {
+    background-color: var(--default-color-button-hover);
+    color: var(--default-color-hover);
 }
 
 .secao_telas__img {
@@ -256,6 +264,11 @@ body {
     font-size: var(--general-font-size);
     color: var(--default-color);
     text-decoration: none;
+    transition: color 0.4s;
+}
+
+.rodape__links__link:hover {
+    color: var(--default-color-button-hover);
 }
 
 .rodape__direitos {
